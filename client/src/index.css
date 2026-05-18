@@ -607,10 +607,13 @@ body {
 .main-content {
   margin-left: 280px;
   min-height: 100vh;
+  flex: 1;
+  width: calc(100% - 280px);
+  overflow-x: hidden;
 }
 
 @media (max-width: 1023px) {
-  .main-content { margin-left: 0; }
+  .main-content { margin-left: 0; width: 100%; }
 }
 
 .top-bar {
@@ -634,8 +637,10 @@ body {
 
 .page-content {
   padding: 32px;
-  max-width: 1280px;
+  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 /* ===== Stat Cards ===== */
