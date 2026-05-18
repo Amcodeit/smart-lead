@@ -207,9 +207,3 @@ cd server && npm run dev
 # Frontend (Vite dev server)
 cd client && npm run dev
 ```
-
----
-
-## 📄 License
-
-MIT
