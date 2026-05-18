@@ -29,7 +29,7 @@ const LeadTable: React.FC<LeadTableProps> = ({ leads, onEdit, onDelete, onView }
   const { user } = useAuth();
   const isAdmin = user?.role === UserRole.ADMIN;
 
-  const actionBtnStyle = (hoverColor: string): React.CSSProperties => ({
+  const actionBtnStyle = (_hoverColor: string): React.CSSProperties => ({
     background: 'none', border: 'none', cursor: 'pointer', padding: '8px',
     borderRadius: '8px', color: '#94a3b8', transition: 'all 0.15s',
     display: 'flex', alignItems: 'center',
